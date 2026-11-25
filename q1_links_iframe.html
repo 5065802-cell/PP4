@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Hyperlinks & Sandboxed Iframe</title></head>
+<body>
+  <h2>Hyperlinks Demo</h2>
+  <p><a href="https://owasp.org" target="_blank" title="Visit OWASP">OWASP Website (New Tab)</a></p>
+  <p><a href="#about" title="Jump to About Section">Go to About Section (Same Page)</a></p>
+
+  <h2>Sandboxed Iframe</h2>
+  <iframe src="https://example.com" width="500" height="250" title="Example Sandbox" sandbox="allow-scripts"></iframe>
+
+  <div style="margin-top: 400px;" id="about">
+    <h3>About Section</h3>
+    <p>You jumped to this section on the same page using an anchor link (#about).</p>
+  </div>
+</body>
+</html>
